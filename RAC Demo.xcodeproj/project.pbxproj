@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		632777161CD6AF1D0048EE70 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 632777121CD6AF1D0048EE70 /* Alamofire.framework */; };
+		632777171CD6AF1D0048EE70 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 632777131CD6AF1D0048EE70 /* ReactiveCocoa.framework */; };
+		632777181CD6AF1D0048EE70 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 632777141CD6AF1D0048EE70 /* Result.framework */; };
+		632777191CD6AF1D0048EE70 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 632777151CD6AF1D0048EE70 /* SwiftyJSON.framework */; };
 		632D80191CD68F11006B6A59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632D80181CD68F11006B6A59 /* AppDelegate.swift */; };
 		632D801B1CD68F11006B6A59 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632D801A1CD68F11006B6A59 /* ViewController.swift */; };
 		632D801E1CD68F11006B6A59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 632D801C1CD68F11006B6A59 /* Main.storyboard */; };
@@ -15,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		632777121CD6AF1D0048EE70 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		632777131CD6AF1D0048EE70 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
+		632777141CD6AF1D0048EE70 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		632777151CD6AF1D0048EE70 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		632D80151CD68F11006B6A59 /* RAC Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RAC Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		632D80181CD68F11006B6A59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		632D801A1CD68F11006B6A59 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,6 +37,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				632777161CD6AF1D0048EE70 /* Alamofire.framework in Frameworks */,
+				632777171CD6AF1D0048EE70 /* ReactiveCocoa.framework in Frameworks */,
+				632777181CD6AF1D0048EE70 /* Result.framework in Frameworks */,
+				632777191CD6AF1D0048EE70 /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +52,10 @@
 			children = (
 				632D80171CD68F11006B6A59 /* RAC Demo */,
 				632D80161CD68F11006B6A59 /* Products */,
+				632777121CD6AF1D0048EE70 /* Alamofire.framework */,
+				632777131CD6AF1D0048EE70 /* ReactiveCocoa.framework */,
+				632777141CD6AF1D0048EE70 /* Result.framework */,
+				632777151CD6AF1D0048EE70 /* SwiftyJSON.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +90,7 @@
 				632D80111CD68F11006B6A59 /* Sources */,
 				632D80121CD68F11006B6A59 /* Frameworks */,
 				632D80131CD68F11006B6A59 /* Resources */,
+				6327771A1CD6AF2D0048EE70 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -129,6 +146,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6327771A1CD6AF2D0048EE70 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/build/iOS/SwiftyJSON.framework",
+				"$(SRCROOT)/Carthage/build/iOS/Result.framework",
+				"$(SRCROOT)/Carthage/build/iOS/ReactiveCocoa.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		632D80111CD68F11006B6A59 /* Sources */ = {
@@ -249,6 +286,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "RAC Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mwb.RAC-Demo";
@@ -260,6 +301,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "RAC Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mwb.RAC-Demo";
@@ -286,6 +331,7 @@
 				632D80291CD68F11006B6A59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
