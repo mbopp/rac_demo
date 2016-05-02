@@ -113,13 +113,29 @@ SWIFT_CLASS("_TtC8RAC_Demo11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+@interface UILabel (SWIFT_EXTENSION(RAC_Demo))
+@end
+
+
+@interface UITextField (SWIFT_EXTENSION(RAC_Demo))
+- (void)changed;
+@end
+
+
+@interface UIView (SWIFT_EXTENSION(RAC_Demo))
+@end
+
 @class NSBundle;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC8RAC_Demo14ViewController")
 @interface ViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified oneTextfield;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified twoTextfield;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified threeTextfield;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified resultLabel;
 - (void)viewDidLoad;
-- (void)didReceiveMemoryWarning;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

@@ -6,101 +6,330 @@ provides-nominal:
 provides-member:
 - ["C8RAC_Demo14ViewController", ""]
 provides-dynamic-lookup:
+- "resultLabel"
+- "twoTextfield"
+- "threeTextfield"
+- "oneTextfield"
 - "viewDidLoad"
-- "didReceiveMemoryWarning"
 depends-top-level:
-- "UIViewController"
+- !private "combineLatest"
 - "ViewController"
+- "UIViewController"
+- !private "print"
+- "UITextField"
+- !private "StringLiteralType"
+- "UILabel"
 depends-member:
-- ["Ps9AnyObject", "didReceiveMemoryWarning"]
+- !private ["Ps9AnyObject", "combineLatest"]
 - ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "oneTextfield"]
+- !private ["Ps9AnyObject", "print"]
+- !private ["Ps9AnyObject", "producer"]
+- !private ["Ps9AnyObject", "rac_text"]
+- ["Ps9AnyObject", "resultLabel"]
+- !private ["Ps9AnyObject", "startWithNext"]
+- ["Ps9AnyObject", "threeTextfield"]
+- ["Ps9AnyObject", "twoTextfield"]
 - ["Ps9AnyObject", "viewDidLoad"]
 - ["Ps9AnyObject", ""]
-- ["Ps11CVarArgType", "didReceiveMemoryWarning"]
+- !private ["Sb", "deinit"]
+- !private ["Ps11CVarArgType", "combineLatest"]
 - ["Ps11CVarArgType", "init"]
+- ["Ps11CVarArgType", "oneTextfield"]
+- !private ["Ps11CVarArgType", "print"]
+- !private ["Ps11CVarArgType", "rac_text"]
+- ["Ps11CVarArgType", "resultLabel"]
+- ["Ps11CVarArgType", "threeTextfield"]
+- ["Ps11CVarArgType", "twoTextfield"]
 - ["Ps11CVarArgType", "viewDidLoad"]
 - ["Ps11CVarArgType", ""]
-- ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
+- !private ["Vs9Character", "deinit"]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "combineLatest"]
 - ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "oneTextfield"]
+- !private ["Ps28CustomDebugStringConvertible", "print"]
+- !private ["Ps28CustomDebugStringConvertible", "rac_text"]
+- ["Ps28CustomDebugStringConvertible", "resultLabel"]
+- ["Ps28CustomDebugStringConvertible", "threeTextfield"]
+- ["Ps28CustomDebugStringConvertible", "twoTextfield"]
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
 - ["Ps28CustomDebugStringConvertible", ""]
-- ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
+- !private ["Ps23CustomStringConvertible", "combineLatest"]
 - ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "oneTextfield"]
+- !private ["Ps23CustomStringConvertible", "print"]
+- !private ["Ps23CustomStringConvertible", "rac_text"]
+- ["Ps23CustomStringConvertible", "resultLabel"]
+- ["Ps23CustomStringConvertible", "threeTextfield"]
+- ["Ps23CustomStringConvertible", "twoTextfield"]
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
 - ["Ps23CustomStringConvertible", ""]
-- ["Ps9Equatable", "didReceiveMemoryWarning"]
+- !private ["Sd", "deinit"]
+- !private ["Ps9Equatable", "combineLatest"]
 - ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "oneTextfield"]
+- !private ["Ps9Equatable", "print"]
+- !private ["Ps9Equatable", "rac_text"]
+- ["Ps9Equatable", "resultLabel"]
+- ["Ps9Equatable", "threeTextfield"]
+- ["Ps9Equatable", "twoTextfield"]
 - ["Ps9Equatable", "viewDidLoad"]
 - ["Ps9Equatable", ""]
-- ["Ps8Hashable", "didReceiveMemoryWarning"]
+- !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["Sf", "deinit"]
+- !private ["Ps8Hashable", "combineLatest"]
 - ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "oneTextfield"]
+- !private ["Ps8Hashable", "print"]
+- !private ["Ps8Hashable", "rac_text"]
+- ["Ps8Hashable", "resultLabel"]
+- ["Ps8Hashable", "threeTextfield"]
+- ["Ps8Hashable", "twoTextfield"]
 - ["Ps8Hashable", "viewDidLoad"]
 - ["Ps8Hashable", ""]
-- ["PSo8NSCoding", "didReceiveMemoryWarning"]
+- !private ["Si", "deinit"]
+- !private ["Vs5Int16", "deinit"]
+- !private ["Vs5Int32", "deinit"]
+- !private ["Vs5Int64", "deinit"]
+- !private ["Vs4Int8", "deinit"]
+- !private ["Ps14MirrorPathType", "init"]
+- !private ["C13ReactiveCocoa15MutableProperty", "producer"]
+- !private ["P13ReactiveCocoa19MutablePropertyType", "producer"]
+- !private ["PSo8NSCoding", "combineLatest"]
 - ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "oneTextfield"]
+- !private ["PSo8NSCoding", "print"]
+- !private ["PSo8NSCoding", "rac_text"]
+- ["PSo8NSCoding", "resultLabel"]
+- ["PSo8NSCoding", "threeTextfield"]
+- ["PSo8NSCoding", "twoTextfield"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", ""]
-- ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "combineLatest"]
 - ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", "oneTextfield"]
+- !private ["PSo26NSExtensionRequestHandling", "print"]
+- ["PSo26NSExtensionRequestHandling", "resultLabel"]
+- ["PSo26NSExtensionRequestHandling", "threeTextfield"]
+- ["PSo26NSExtensionRequestHandling", "twoTextfield"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", ""]
-- ["CSo8NSObject", "didReceiveMemoryWarning"]
+- !private ["PSo16NSMutableCopying", "init"]
+- ["CSo8NSObject", "UILabel"]
+- ["CSo8NSObject", "UITextField"]
+- !private ["CSo8NSObject", "combineLatest"]
 - ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "oneTextfield"]
+- !private ["CSo8NSObject", "print"]
+- !private ["CSo8NSObject", "rac_text"]
+- ["CSo8NSObject", "resultLabel"]
+- ["CSo8NSObject", "threeTextfield"]
+- ["CSo8NSObject", "twoTextfield"]
 - ["CSo8NSObject", "viewDidLoad"]
-- ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
+- !private ["PSo16NSObjectProtocol", "combineLatest"]
 - ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "oneTextfield"]
+- !private ["PSo16NSObjectProtocol", "print"]
+- !private ["PSo16NSObjectProtocol", "rac_text"]
+- ["PSo16NSObjectProtocol", "resultLabel"]
+- ["PSo16NSObjectProtocol", "threeTextfield"]
+- ["PSo16NSObjectProtocol", "twoTextfield"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", ""]
-- ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo8NSString", "deinit"]
+- !private ["CSo8NSString", "init"]
+- !private ["Ps16OutputStreamType", "init"]
+- !private ["P13ReactiveCocoa12PropertyType", "producer"]
+- !private ["C13ReactiveCocoa6Signal", "startWithNext"]
+- !private ["V13ReactiveCocoa14SignalProducer", "Error"]
+- !private ["V13ReactiveCocoa14SignalProducer", "Value"]
+- !private ["V13ReactiveCocoa14SignalProducer", "startWithNext"]
+- !private ["P13ReactiveCocoa18SignalProducerType", "Error"]
+- !private ["P13ReactiveCocoa18SignalProducerType", "Value"]
+- !private ["P13ReactiveCocoa18SignalProducerType", "startWithNext"]
+- !private ["P13ReactiveCocoa10SignalType", "startWithNext"]
+- !private ["Ps10Streamable", "init"]
+- !private ["SS", "init"]
+- !private ["Ps30StringInterpolationConvertible", "init"]
+- !private ["Ps24StringLiteralConvertible", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "rac_text"]
+- !private ["PSo12UIAppearance", "rac_text"]
+- !private ["PSo21UIAppearanceContainer", "combineLatest"]
 - ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "oneTextfield"]
+- !private ["PSo21UIAppearanceContainer", "print"]
+- !private ["PSo21UIAppearanceContainer", "rac_text"]
+- ["PSo21UIAppearanceContainer", "resultLabel"]
+- ["PSo21UIAppearanceContainer", "threeTextfield"]
+- ["PSo21UIAppearanceContainer", "twoTextfield"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", ""]
-- ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
+- !private ["PSo18UIContentContainer", "combineLatest"]
 - ["PSo18UIContentContainer", "init"]
+- ["PSo18UIContentContainer", "oneTextfield"]
+- !private ["PSo18UIContentContainer", "print"]
+- ["PSo18UIContentContainer", "resultLabel"]
+- ["PSo18UIContentContainer", "threeTextfield"]
+- ["PSo18UIContentContainer", "twoTextfield"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", ""]
-- ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
+- !private ["CSo9UIControl", "rac_text"]
+- !private ["PSo17UICoordinateSpace", "rac_text"]
+- !private ["PSo13UIDynamicItem", "rac_text"]
+- !private ["PSo18UIFocusEnvironment", "combineLatest"]
 - ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "oneTextfield"]
+- !private ["PSo18UIFocusEnvironment", "print"]
+- !private ["PSo18UIFocusEnvironment", "rac_text"]
+- ["PSo18UIFocusEnvironment", "resultLabel"]
+- ["PSo18UIFocusEnvironment", "threeTextfield"]
+- ["PSo18UIFocusEnvironment", "twoTextfield"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", ""]
-- ["CSo11UIResponder", "didReceiveMemoryWarning"]
+- !private ["PSo10UIKeyInput", "rac_text"]
+- ["CSo11UIResponder", "UILabel"]
+- ["CSo11UIResponder", "UITextField"]
+- !private ["CSo11UIResponder", "combineLatest"]
 - ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "oneTextfield"]
+- !private ["CSo11UIResponder", "print"]
+- !private ["CSo11UIResponder", "rac_text"]
+- ["CSo11UIResponder", "resultLabel"]
+- ["CSo11UIResponder", "threeTextfield"]
+- ["CSo11UIResponder", "twoTextfield"]
 - ["CSo11UIResponder", "viewDidLoad"]
-- ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
+- !private ["PSo16UIStateRestoring", "combineLatest"]
 - ["PSo16UIStateRestoring", "init"]
+- ["PSo16UIStateRestoring", "oneTextfield"]
+- !private ["PSo16UIStateRestoring", "print"]
+- ["PSo16UIStateRestoring", "resultLabel"]
+- ["PSo16UIStateRestoring", "threeTextfield"]
+- ["PSo16UIStateRestoring", "twoTextfield"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", ""]
-- ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
+- !private ["CSo11UITextField", "rac_text"]
+- !private ["PSo11UITextInput", "rac_text"]
+- !private ["PSo17UITextInputTraits", "rac_text"]
+- !private ["PSo18UITraitEnvironment", "combineLatest"]
 - ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "oneTextfield"]
+- !private ["PSo18UITraitEnvironment", "print"]
+- !private ["PSo18UITraitEnvironment", "rac_text"]
+- ["PSo18UITraitEnvironment", "resultLabel"]
+- ["PSo18UITraitEnvironment", "threeTextfield"]
+- ["PSo18UITraitEnvironment", "twoTextfield"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", ""]
-- ["CSo16UIViewController", "didReceiveMemoryWarning"]
+- !private ["CSo6UIView", "rac_text"]
+- ["CSo16UIViewController", "UILabel"]
+- ["CSo16UIViewController", "UITextField"]
+- !private ["CSo16UIViewController", "combineLatest"]
 - ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "oneTextfield"]
+- !private ["CSo16UIViewController", "print"]
+- ["CSo16UIViewController", "resultLabel"]
+- ["CSo16UIViewController", "threeTextfield"]
+- ["CSo16UIViewController", "twoTextfield"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", ""]
+- !private ["Su", "deinit"]
+- !private ["Vs6UInt16", "deinit"]
+- !private ["Vs6UInt32", "deinit"]
+- !private ["Vs6UInt64", "deinit"]
+- !private ["Vs5UInt8", "deinit"]
+- !private ["Sc", "deinit"]
+- !private ["Ps31UnicodeScalarLiteralConvertible", "init"]
+- ["C8RAC_Demo14ViewController", "UILabel"]
+- ["C8RAC_Demo14ViewController", "UITextField"]
+- !private ["C8RAC_Demo14ViewController", "combineLatest"]
 - ["C8RAC_Demo14ViewController", "deinit"]
-- ["C8RAC_Demo14ViewController", "didReceiveMemoryWarning"]
 - ["C8RAC_Demo14ViewController", "init"]
+- ["C8RAC_Demo14ViewController", "oneTextfield"]
+- !private ["C8RAC_Demo14ViewController", "print"]
+- ["C8RAC_Demo14ViewController", "resultLabel"]
+- ["C8RAC_Demo14ViewController", "threeTextfield"]
+- ["C8RAC_Demo14ViewController", "twoTextfield"]
 - ["C8RAC_Demo14ViewController", "viewDidLoad"]
+- !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["Ps32_BuiltinStringLiteralConvertible", "init"]
+- !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "init"]
+- !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps12_Reflectable", "init"]
+- !private ["Ps12_Reflectable", "rac_text"]
 depends-nominal:
 - "Ps9AnyObject"
+- !private "Sb"
 - "Ps11CVarArgType"
+- !private "Vs9Character"
+- !private "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
 - "Ps23CustomStringConvertible"
+- !private "Sd"
 - "Ps9Equatable"
+- !private "Ps41ExtendedGraphemeClusterLiteralConvertible"
+- !private "Sf"
 - "Ps8Hashable"
+- !private "Si"
+- !private "Vs5Int16"
+- !private "Vs5Int32"
+- !private "Vs5Int64"
+- !private "Vs4Int8"
+- !private "Ps14MirrorPathType"
+- !private "C13ReactiveCocoa15MutableProperty"
+- !private "P13ReactiveCocoa19MutablePropertyType"
 - "PSo8NSCoding"
+- !private "PSo9NSCopying"
 - "PSo26NSExtensionRequestHandling"
+- !private "PSo16NSMutableCopying"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- !private "Ps16OutputStreamType"
+- !private "P13ReactiveCocoa12PropertyType"
+- !private "C13ReactiveCocoa6Signal"
+- !private "V13ReactiveCocoa14SignalProducer"
+- !private "P13ReactiveCocoa18SignalProducerType"
+- !private "P13ReactiveCocoa10SignalType"
+- !private "Ps10Streamable"
+- !private "SS"
+- !private "Ps30StringInterpolationConvertible"
+- !private "Ps24StringLiteralConvertible"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
 - "PSo18UIContentContainer"
+- !private "CSo9UIControl"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
 - "PSo18UIFocusEnvironment"
+- !private "PSo10UIKeyInput"
 - "CSo11UIResponder"
 - "PSo16UIStateRestoring"
+- !private "CSo11UITextField"
+- !private "PSo11UITextInput"
+- !private "PSo17UITextInputTraits"
 - "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
 - "CSo16UIViewController"
+- !private "Su"
+- !private "Vs6UInt16"
+- !private "Vs6UInt32"
+- !private "Vs6UInt64"
+- !private "Vs5UInt8"
+- !private "Sc"
+- !private "Ps31UnicodeScalarLiteralConvertible"
 - "C8RAC_Demo14ViewController"
+- !private "Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible"
+- !private "Ps32_BuiltinStringLiteralConvertible"
+- !private "Ps37_BuiltinUTF16StringLiteralConvertible"
+- !private "Ps39_BuiltinUnicodeScalarLiteralConvertible"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Ps12_Reflectable"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
@@ -111,4 +340,80 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-interface-hash: "2273e0b6560749631899e82af2412a52"
+- "/Users/mbopp/Projects/apps/RAC Demo/Carthage/Build/iOS/ReactiveCocoa.framework/Modules/ReactiveCocoa.swiftmodule/x86_64.swiftmodule"
+- "/Users/mbopp/Projects/apps/RAC Demo/Carthage/Build/iOS/ReactiveCocoa.framework/Headers/ReactiveCocoa-Swift.h"
+- "/Users/mbopp/Projects/apps/RAC Demo/Carthage/Build/iOS/ReactiveCocoa.framework/Headers/UISwitch+RACSignalSupport.h"
+- "/Users/mbopp/Projects/apps/RAC Demo/Carthage/Build/iOS/ReactiveCocoa.framework/Headers/UISlider+RACSignalSupport.h"
+- "/Users/mbopp/Projects/apps/RAC Demo/Carthage/Build/iOS/ReactiveCocoa.framework/Headers/UIRefreshControl+RACCommandSupport.h"
+- "/Users/mbopp/Projects/apps/RAC Demo/Carthage/Build/iOS/ReactiveCocoa.framework/Headers/UIImagePickerController+RACSignalSupport.h"
+- "/Users/mbopp/Projects/apps/RAC Demo/Carthage/Build/iOS/ReactiveCocoa.framework/Headers/MKAnnotationView+RACSignalSupport.h"
+- "/Users/mbopp/Projects/apps/RAC Demo/Carthage/Build/iOS/ReactiveCocoa.framework/Headers/UIActionSheet+RACSignalSupport.h"
+- "/Users/mbopp/Projects/apps/RAC Demo/Carthage/Build/iOS/ReactiveCocoa.framework/Headers/UIAlertView+RACSignalSupport.h"
+- "/Users/mbopp/Projects/apps/RAC Demo/Carthage/Build/iOS/ReactiveCocoa.framework/Headers/UIBarButtonItem+RACCommandSupport.h"
+- "/Users/mbopp/Projects/apps/RAC Demo/Carthage/Build/iOS/ReactiveCocoa.framework/Headers/UIDatePicker+RACSignalSupport.h"
+- "/Users/mbopp/Projects/apps/RAC Demo/Carthage/Build/iOS/ReactiveCocoa.framework/Headers/UIStepper+RACSignalSupport.h"
+- "/Users/mbopp/Projects/apps/RAC Demo/Carthage/Build/iOS/ReactiveCocoa.framework/Headers/NSURLConnection+RACSupport.h"
+- "/Users/mbopp/Projects/apps/RAC Demo/Carthage/Build/iOS/ReactiveCocoa.framework/Headers/UITextView+RACSignalSupport.h"
+- "/Users/mbopp/Projects/apps/RAC Demo/Carthage/Build/iOS/ReactiveCocoa.framework/Headers/UITextField+RACSignalSupport.h"
+- "/Users/mbopp/Projects/apps/RAC Demo/Carthage/Build/iOS/ReactiveCocoa.framework/Headers/UITableViewHeaderFooterView+RACSignalSupport.h"
+- "/Users/mbopp/Projects/apps/RAC Demo/Carthage/Build/iOS/ReactiveCocoa.framework/Headers/UITableViewCell+RACSignalSupport.h"
+- "/Users/mbopp/Projects/apps/RAC Demo/Carthage/Build/iOS/ReactiveCocoa.framework/Headers/UISegmentedControl+RACSignalSupport.h"
+- "/Users/mbopp/Projects/apps/RAC Demo/Carthage/Build/iOS/ReactiveCocoa.framework/Headers/UIGestureRecognizer+RACSignalSupport.h"
+- "/Users/mbopp/Projects/apps/RAC Demo/Carthage/Build/iOS/ReactiveCocoa.framework/Headers/UIControl+RACSignalSupport.h"
+- "/Users/mbopp/Projects/apps/RAC Demo/Carthage/Build/iOS/ReactiveCocoa.framework/Headers/UICollectionReusableView+RACSignalSupport.h"
+- "/Users/mbopp/Projects/apps/RAC Demo/Carthage/Build/iOS/ReactiveCocoa.framework/Headers/UIButton+RACCommandSupport.h"
+- "/Users/mbopp/Projects/apps/RAC Demo/Carthage/Build/iOS/ReactiveCocoa.framework/Headers/RACUnit.h"
+- "/Users/mbopp/Projects/apps/RAC Demo/Carthage/Build/iOS/ReactiveCocoa.framework/Headers/RACTuple.h"
+- "/Users/mbopp/Projects/apps/RAC Demo/Carthage/Build/iOS/ReactiveCocoa.framework/Headers/RACTestScheduler.h"
+- "/Users/mbopp/Projects/apps/RAC Demo/Carthage/Build/iOS/ReactiveCocoa.framework/Headers/RACTargetQueueScheduler.h"
+- "/Users/mbopp/Projects/apps/RAC Demo/Carthage/Build/iOS/ReactiveCocoa.framework/Headers/RACSubscriptingAssignmentTrampoline.h"
+- "/Users/mbopp/Projects/apps/RAC Demo/Carthage/Build/iOS/ReactiveCocoa.framework/Headers/RACSignal+Operations.h"
+- "/Users/mbopp/Projects/apps/RAC Demo/Carthage/Build/iOS/ReactiveCocoa.framework/Headers/RACSerialDisposable.h"
+- "/Users/mbopp/Projects/apps/RAC Demo/Carthage/Build/iOS/ReactiveCocoa.framework/Headers/RACSequence.h"
+- "/Users/mbopp/Projects/apps/RAC Demo/Carthage/Build/iOS/ReactiveCocoa.framework/Headers/RACScopedDisposable.h"
+- "/Users/mbopp/Projects/apps/RAC Demo/Carthage/Build/iOS/ReactiveCocoa.framework/Headers/RACReplaySubject.h"
+- "/Users/mbopp/Projects/apps/RAC Demo/Carthage/Build/iOS/ReactiveCocoa.framework/Headers/RACScheduler+Subclass.h"
+- "/Users/mbopp/Projects/apps/RAC Demo/Carthage/Build/iOS/ReactiveCocoa.framework/Headers/RACQueueScheduler+Subclass.h"
+- "/Users/mbopp/Projects/apps/RAC Demo/Carthage/Build/iOS/ReactiveCocoa.framework/Headers/RACScheduler.h"
+- "/Users/mbopp/Projects/apps/RAC Demo/Carthage/Build/iOS/ReactiveCocoa.framework/Headers/RACQueueScheduler.h"
+- "/Users/mbopp/Projects/apps/RAC Demo/Carthage/Build/iOS/ReactiveCocoa.framework/Headers/RACMulticastConnection.h"
+- "/Users/mbopp/Projects/apps/RAC Demo/Carthage/Build/iOS/ReactiveCocoa.framework/Headers/RACKVOChannel.h"
+- "/Users/mbopp/Projects/apps/RAC Demo/Carthage/Build/iOS/ReactiveCocoa.framework/Headers/RACGroupedSignal.h"
+- "/Users/mbopp/Projects/apps/RAC Demo/Carthage/Build/iOS/ReactiveCocoa.framework/Headers/RACEvent.h"
+- "/Users/mbopp/Projects/apps/RAC Demo/Carthage/Build/iOS/ReactiveCocoa.framework/Headers/RACDynamicPropertySuperclass.h"
+- "/Users/mbopp/Projects/apps/RAC Demo/Carthage/Build/iOS/ReactiveCocoa.framework/Headers/RACDisposable.h"
+- "/Users/mbopp/Projects/apps/RAC Demo/Carthage/Build/iOS/ReactiveCocoa.framework/Headers/RACCompoundDisposable.h"
+- "/Users/mbopp/Projects/apps/RAC Demo/Carthage/Build/iOS/ReactiveCocoa.framework/Headers/RACCommand.h"
+- "/Users/mbopp/Projects/apps/RAC Demo/Carthage/Build/iOS/ReactiveCocoa.framework/Headers/RACChannel.h"
+- "/Users/mbopp/Projects/apps/RAC Demo/Carthage/Build/iOS/ReactiveCocoa.framework/Headers/RACSubscriber.h"
+- "/Users/mbopp/Projects/apps/RAC Demo/Carthage/Build/iOS/ReactiveCocoa.framework/Headers/RACStream.h"
+- "/Users/mbopp/Projects/apps/RAC Demo/Carthage/Build/iOS/ReactiveCocoa.framework/Headers/RACSignal.h"
+- "/Users/mbopp/Projects/apps/RAC Demo/Carthage/Build/iOS/ReactiveCocoa.framework/Headers/RACSubject.h"
+- "/Users/mbopp/Projects/apps/RAC Demo/Carthage/Build/iOS/ReactiveCocoa.framework/Headers/RACBehaviorSubject.h"
+- "/Users/mbopp/Projects/apps/RAC Demo/Carthage/Build/iOS/ReactiveCocoa.framework/Headers/NSUserDefaults+RACSupport.h"
+- "/Users/mbopp/Projects/apps/RAC Demo/Carthage/Build/iOS/ReactiveCocoa.framework/Headers/NSIndexSet+RACSequenceAdditions.h"
+- "/Users/mbopp/Projects/apps/RAC Demo/Carthage/Build/iOS/ReactiveCocoa.framework/Headers/NSString+RACSupport.h"
+- "/Users/mbopp/Projects/apps/RAC Demo/Carthage/Build/iOS/ReactiveCocoa.framework/Headers/NSString+RACSequenceAdditions.h"
+- "/Users/mbopp/Projects/apps/RAC Demo/Carthage/Build/iOS/ReactiveCocoa.framework/Headers/NSSet+RACSequenceAdditions.h"
+- "/Users/mbopp/Projects/apps/RAC Demo/Carthage/Build/iOS/ReactiveCocoa.framework/Headers/NSOrderedSet+RACSequenceAdditions.h"
+- "/Users/mbopp/Projects/apps/RAC Demo/Carthage/Build/iOS/ReactiveCocoa.framework/Headers/NSObject+RACSelectorSignal.h"
+- "/Users/mbopp/Projects/apps/RAC Demo/Carthage/Build/iOS/ReactiveCocoa.framework/Headers/NSObject+RACPropertySubscribing.h"
+- "/Users/mbopp/Projects/apps/RAC Demo/Carthage/Build/iOS/ReactiveCocoa.framework/Headers/NSObject+RACLifting.h"
+- "/Users/mbopp/Projects/apps/RAC Demo/Carthage/Build/iOS/ReactiveCocoa.framework/Headers/NSObject+RACDeallocating.h"
+- "/Users/mbopp/Projects/apps/RAC Demo/Carthage/Build/iOS/ReactiveCocoa.framework/Headers/NSNotificationCenter+RACSupport.h"
+- "/Users/mbopp/Projects/apps/RAC Demo/Carthage/Build/iOS/ReactiveCocoa.framework/Headers/NSFileHandle+RACSupport.h"
+- "/Users/mbopp/Projects/apps/RAC Demo/Carthage/Build/iOS/ReactiveCocoa.framework/Headers/NSEnumerator+RACSequenceAdditions.h"
+- "/Users/mbopp/Projects/apps/RAC Demo/Carthage/Build/iOS/ReactiveCocoa.framework/Headers/NSDictionary+RACSequenceAdditions.h"
+- "/Users/mbopp/Projects/apps/RAC Demo/Carthage/Build/iOS/ReactiveCocoa.framework/Headers/NSData+RACSupport.h"
+- "/Users/mbopp/Projects/apps/RAC Demo/Carthage/Build/iOS/ReactiveCocoa.framework/Headers/NSArray+RACSequenceAdditions.h"
+- "/Users/mbopp/Projects/apps/RAC Demo/Carthage/Build/iOS/ReactiveCocoa.framework/Headers/EXTScope.h"
+- "/Users/mbopp/Projects/apps/RAC Demo/Carthage/Build/iOS/ReactiveCocoa.framework/Headers/metamacros.h"
+- "/Users/mbopp/Projects/apps/RAC Demo/Carthage/Build/iOS/ReactiveCocoa.framework/Headers/EXTKeyPathCoding.h"
+- "/Users/mbopp/Projects/apps/RAC Demo/Carthage/Build/iOS/ReactiveCocoa.framework/Headers/ReactiveCocoa.h"
+- "/Users/mbopp/Projects/apps/RAC Demo/Carthage/Build/iOS/ReactiveCocoa.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Users/mbopp/Projects/apps/RAC Demo/Carthage/Build/iOS/Result.framework/Modules/Result.swiftmodule/x86_64.swiftmodule"
+- "/Users/mbopp/Projects/apps/RAC Demo/Carthage/Build/iOS/Result.framework/Headers/Result-Swift.h"
+- "/Users/mbopp/Projects/apps/RAC Demo/Carthage/Build/iOS/Result.framework/Headers/Result.h"
+- "/Users/mbopp/Projects/apps/RAC Demo/Carthage/Build/iOS/Result.framework/Modules/module.modulemap"
+interface-hash: "ceee31a7a5a7b026f5c2687111fd4292"

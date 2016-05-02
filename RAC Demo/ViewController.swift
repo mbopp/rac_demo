@@ -7,13 +7,23 @@
 //
 
 import UIKit
+import ReactiveCocoa
 
 class ViewController: UIViewController {
 
+  @IBOutlet weak var oneTextfield: UITextField!
+  @IBOutlet weak var twoTextfield: UITextField!
+  @IBOutlet weak var threeTextfield: UITextField!
+  @IBOutlet weak var resultLabel: UILabel!
+  
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    combineLatest(oneTextfield.rac_text.producer, twoTextfield.rac_text.producer, threeTextfield.rac_text.producer)
+      .startWithNext { one, two, three in
+        print("\(one) - \(two) - \(three)")
+      }
+    
   }
 
 }
-

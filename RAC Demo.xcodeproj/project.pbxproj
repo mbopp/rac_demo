@@ -11,6 +11,7 @@
 		632777171CD6AF1D0048EE70 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 632777131CD6AF1D0048EE70 /* ReactiveCocoa.framework */; };
 		632777181CD6AF1D0048EE70 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 632777141CD6AF1D0048EE70 /* Result.framework */; };
 		632777191CD6AF1D0048EE70 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 632777151CD6AF1D0048EE70 /* SwiftyJSON.framework */; };
+		6327771C1CD6D3630048EE70 /* UIKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6327771B1CD6D3630048EE70 /* UIKitExtensions.swift */; };
 		632D80191CD68F11006B6A59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632D80181CD68F11006B6A59 /* AppDelegate.swift */; };
 		632D801B1CD68F11006B6A59 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632D801A1CD68F11006B6A59 /* ViewController.swift */; };
 		632D801E1CD68F11006B6A59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 632D801C1CD68F11006B6A59 /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 		632777131CD6AF1D0048EE70 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
 		632777141CD6AF1D0048EE70 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		632777151CD6AF1D0048EE70 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		6327771B1CD6D3630048EE70 /* UIKitExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitExtensions.swift; sourceTree = "<group>"; };
 		632D80151CD68F11006B6A59 /* RAC Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RAC Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		632D80181CD68F11006B6A59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		632D801A1CD68F11006B6A59 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				632D801F1CD68F11006B6A59 /* Assets.xcassets */,
 				632D80211CD68F11006B6A59 /* LaunchScreen.storyboard */,
 				632D80241CD68F11006B6A59 /* Info.plist */,
+				6327771B1CD6D3630048EE70 /* UIKitExtensions.swift */,
 			);
 			path = "RAC Demo";
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 			files = (
 				632D801B1CD68F11006B6A59 /* ViewController.swift in Sources */,
 				632D80191CD68F11006B6A59 /* AppDelegate.swift in Sources */,
+				6327771C1CD6D3630048EE70 /* UIKitExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

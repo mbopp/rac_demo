@@ -1,6 +1,7 @@
 version: "Apple Swift version 2.2 (swiftlang-703.0.18.1 clang-703.0.29)"
 options: "2d0d99a24306d16c30de6e6855b668f1"
-build_time: [515453981, 828038000]
+build_time: [515465232, 133489000]
 inputs:
-  "/Users/mbopp/Projects/apps/RAC Demo/RAC Demo/ViewController.swift": [515445777, 0]
+  "/Users/mbopp/Projects/apps/RAC Demo/RAC Demo/ViewController.swift": [515465228, 0]
   "/Users/mbopp/Projects/apps/RAC Demo/RAC Demo/AppDelegate.swift": [515445777, 0]
+  "/Users/mbopp/Projects/apps/RAC Demo/RAC Demo/UIKitExtensions.swift": [508740350, 0]
