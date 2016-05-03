@@ -93,6 +93,7 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 #endif
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
+@import Foundation;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -113,6 +114,25 @@ SWIFT_CLASS("_TtC8RAC_Demo11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UITextField;
+@class UILabel;
+@class NSBundle;
+@class NSCoder;
+
+SWIFT_CLASS("_TtC8RAC_Demo17BadViewController")
+@interface BadViewController : UIViewController <UITextFieldDelegate>
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified oneTextfield;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified twoTextfield;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified threeTextfield;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified resultLabel;
+- (void)viewDidLoad;
+- (IBAction)oneTextfieldDidChange:(id _Nonnull)sender;
+- (BOOL)textField:(UITextField * _Nonnull)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString * _Nonnull)string;
+- (void)calculateSum;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 @interface UILabel (SWIFT_EXTENSION(RAC_Demo))
 @end
@@ -126,8 +146,6 @@ SWIFT_CLASS("_TtC8RAC_Demo11AppDelegate")
 @interface UIView (SWIFT_EXTENSION(RAC_Demo))
 @end
 
-@class NSBundle;
-@class NSCoder;
 
 SWIFT_CLASS("_TtC8RAC_Demo14ViewController")
 @interface ViewController : UIViewController

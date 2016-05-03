@@ -19,10 +19,19 @@ class ViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
+    // Not showing retain cycle prevention 
+    
     combineLatest(oneTextfield.rac_text.producer, twoTextfield.rac_text.producer, threeTextfield.rac_text.producer)
       .startWithNext { one, two, three in
-        print("\(one) - \(two) - \(three)")
+        let a: Int = Int(one) ?? 0
+        let b: Int = Int(two) ?? 0
+        let c: Int = Int(three) ?? 0
+        
+        let total = a + b + c
+        
+        self.resultLabel.text = "total: \(total)"
       }
+    
     
   }
 
