@@ -6,21 +6,21 @@ provides-nominal:
 provides-member:
 - ["C8RAC_Demo14ViewController", ""]
 provides-dynamic-lookup:
+- "twoTextfield"
 - "viewDidLoad"
 - "oneTextfield"
 - "threeTextfield"
 - "resultLabel"
-- "twoTextfield"
 depends-top-level:
-- "UILabel"
-- !private "Int"
-- "UITextField"
-- !private "+"
-- "ViewController"
-- "UIViewController"
 - !private "??"
+- "ViewController"
+- !private "+"
+- "UITextField"
+- !private "Int"
 - "StringLiteralType"
 - !private "combineLatest"
+- "UIViewController"
+- "UILabel"
 depends-member:
 - !private ["Ps9AnyObject", "Int"]
 - !private ["Ps9AnyObject", "combineLatest"]
