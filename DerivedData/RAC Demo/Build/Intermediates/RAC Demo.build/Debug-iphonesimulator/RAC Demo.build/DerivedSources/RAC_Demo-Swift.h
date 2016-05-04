@@ -141,6 +141,15 @@ SWIFT_CLASS("_TtC8RAC_Demo11FakeService")
 @end
 
 
+SWIFT_CLASS("_TtC8RAC_Demo21ServiceViewController")
+@interface ServiceViewController : UIViewController
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 @interface UILabel (SWIFT_EXTENSION(RAC_Demo))
 @end
 

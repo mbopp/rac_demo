@@ -160,7 +160,7 @@
         <!--Service-->
         <scene sceneID="HsS-Ia-xN1">
             <objects>
-                <viewController id="3Cf-Fw-SVC" sceneMemberID="viewController">
+                <viewController id="3Cf-Fw-SVC" customClass="ServiceViewController" customModule="RAC_Demo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kKJ-2u-zcu"/>
                         <viewControllerLayoutGuide type="bottom" id="2Fd-fv-Zbn"/>

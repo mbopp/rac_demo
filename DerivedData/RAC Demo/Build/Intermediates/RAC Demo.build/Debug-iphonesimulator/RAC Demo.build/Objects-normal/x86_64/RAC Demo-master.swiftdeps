@@ -1,9 +1,10 @@
 version: "Apple Swift version 2.2 (swiftlang-703.0.18.8 clang-703.0.31)"
 options: "2d0d99a24306d16c30de6e6855b668f1"
-build_time: [515696256, 34378000]
+build_time: [515696507, 466738000]
 inputs:
   "/Users/mbopp/Projects/apps/RAC Demo/RAC Demo/FakeService.swift": [515695198, 0]
   "/Users/mbopp/Projects/apps/RAC Demo/RAC Demo/BadViewController.swift": [515551014, 0]
+  "/Users/mbopp/Projects/apps/RAC Demo/RAC Demo/ServiceViewController.swift": [9223372036854775807, 0]
   "/Users/mbopp/Projects/apps/RAC Demo/RAC Demo/ViewController.swift": [515594066, 0]
   "/Users/mbopp/Projects/apps/RAC Demo/RAC Demo/AppDelegate.swift": [515445777, 0]
   "/Users/mbopp/Projects/apps/RAC Demo/RAC Demo/UIKitExtensions.swift": [515552731, 0]
