@@ -10,7 +10,6 @@ import Foundation
 import SwiftyJSON
 
 class FakeService: NSObject {
-
   
   func fakeServiceCall(callback: (json: JSON) -> ()) {
     let json = JSON(["test":"test"])
