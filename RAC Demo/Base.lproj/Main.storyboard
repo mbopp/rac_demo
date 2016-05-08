@@ -145,7 +145,7 @@
                             <constraint firstItem="287-Rv-zDf" firstAttribute="top" secondItem="4hm-bX-cmu" secondAttribute="bottom" constant="8" id="yfR-NO-UHG"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Old Textfield" id="MiU-ZF-5Dj"/>
+                    <tabBarItem key="tabBarItem" title="Traditional" id="MiU-ZF-5Dj"/>
                     <connections>
                         <outlet property="oneTextfield" destination="fPK-jI-Bbi" id="DOf-Xh-8bG"/>
                         <outlet property="resultLabel" destination="FtP-5B-HmE" id="Qmy-d7-GTZ"/>
@@ -178,7 +178,7 @@
                                 <state key="normal" title="Call Service Async"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HP8-5e-Hvc">
-                                <rect key="frame" x="200" y="143" width="200" height="21"/>
+                                <rect key="frame" x="20" y="143" width="560" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="5P1-Hc-dnU"/>
                                     <constraint firstAttribute="width" constant="200" id="vPk-bT-kcY"/>
@@ -186,6 +186,11 @@
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="vPk-bT-kcY"/>
+                                    </mask>
+                                </variation>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.88053321118625816" green="0.95304546636671983" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -194,9 +199,15 @@
                             <constraint firstItem="HP8-5e-Hvc" firstAttribute="top" secondItem="Pz7-8y-xol" secondAttribute="bottom" constant="85" id="Ffl-Zs-lPM"/>
                             <constraint firstItem="Pz7-8y-xol" firstAttribute="centerX" secondItem="fpA-yh-LZk" secondAttribute="centerX" id="ROS-SA-r9K"/>
                             <constraint firstItem="Pz7-8y-xol" firstAttribute="top" secondItem="kKJ-2u-zcu" secondAttribute="bottom" constant="8" id="ZJ8-3n-VHb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="HP8-5e-Hvc" secondAttribute="trailing" id="bTD-UJ-atJ"/>
+                            <constraint firstItem="HP8-5e-Hvc" firstAttribute="leading" secondItem="fpA-yh-LZk" secondAttribute="leadingMargin" id="gjR-3x-nqJ"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Service" id="tIs-wn-AFe"/>
+                    <connections>
+                        <outlet property="resultLabel" destination="HP8-5e-Hvc" id="A8C-3C-KUl"/>
+                        <outlet property="startButton" destination="Pz7-8y-xol" id="ilZ-2H-hNj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gmd-i6-Slu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

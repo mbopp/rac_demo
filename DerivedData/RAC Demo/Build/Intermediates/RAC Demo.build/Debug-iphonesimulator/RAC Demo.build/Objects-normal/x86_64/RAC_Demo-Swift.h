@@ -140,11 +140,14 @@ SWIFT_CLASS("_TtC8RAC_Demo11FakeService")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIButton;
 
 SWIFT_CLASS("_TtC8RAC_Demo21ServiceViewController")
 @interface ServiceViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified startButton;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified resultLabel;
 - (void)viewDidLoad;
-- (void)didReceiveMemoryWarning;
+- (void)startSync:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
