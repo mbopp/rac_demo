@@ -137,6 +137,8 @@ SWIFT_CLASS("_TtC8RAC_Demo17BadViewController")
 
 SWIFT_CLASS("_TtC8RAC_Demo11FakeService")
 @interface FakeService : NSObject
++ (NSArray<NSNumber *> * _Nonnull)getDataImperatively:(NSArray<NSNumber *> * _Nonnull)inputArray;
++ (NSArray<NSNumber *> * _Nonnull)getDataDeclaratively:(NSArray<NSNumber *> * _Nonnull)inputArray;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 

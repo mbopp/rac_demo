@@ -20,16 +20,17 @@ class ServiceViewController: UIViewController {
     
     startButton.addTarget(self, action: #selector(ServiceViewController.startSync(_:)), forControlEvents: UIControlEvents.TouchUpInside)
     
-    
-    
   }
   
   func startSync(sender: AnyObject) -> Void {
     
     retrieveJSON()
+      .on(failed: { [weak self] error in
+        self!.resultLabel.text = "Error: \(error.localizedDescription)"
+      })
       .startWithNext { [weak self] json in
         print(json)
-        self!.resultLabel.text = json["message"].stringValue
+        self!.resultLabel.text = json.array?.map { $0.stringValue }.joinWithSeparator("-")
       }
     
   }
