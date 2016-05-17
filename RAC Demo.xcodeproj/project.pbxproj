@@ -36,6 +36,7 @@
 		632D801F1CD68F11006B6A59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		632D80221CD68F11006B6A59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		632D80241CD68F11006B6A59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		634D4D8B1CEA9B5B00A58176 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		63520B5A1CDA581000F5F5FB /* FakeService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeService.swift; sourceTree = "<group>"; };
 		63520B5C1CDA627A00F5F5FB /* ServiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,6 +89,7 @@
 				6327771B1CD6D3630048EE70 /* UIKitExtensions.swift */,
 				63520B5A1CDA581000F5F5FB /* FakeService.swift */,
 				63520B5C1CDA627A00F5F5FB /* ServiceViewController.swift */,
+				634D4D8B1CEA9B5B00A58176 /* MyPlayground.playground */,
 			);
 			path = "RAC Demo";
 			sourceTree = "<group>";

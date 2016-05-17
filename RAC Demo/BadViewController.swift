@@ -17,24 +17,19 @@ class BadViewController: UIViewController, UITextFieldDelegate {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
-    twoTextfield.delegate = self
-    
     threeTextfield.addTarget(self, action: #selector(BadViewController.calculateSum), forControlEvents: UIControlEvents.EditingChanged)
   }
   
-  // ONE
-  @IBAction func oneTextfieldDidChange(sender: AnyObject) {
-    calculateSum()
-  }
-
-  // TWO
-  // and requires setting the delegate of the second textfield to this class
   func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
     calculateSum()
     return true
   }
   
+  @IBAction func oneTextfieldDidChange(sender: AnyObject) {
+    calculateSum()
+  }
+
+ 
   func calculateSum() {
    
     let a: Int = Int(oneTextfield.text!) ?? 0
